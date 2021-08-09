@@ -50,11 +50,11 @@ def _check_member(client, message):
       except UserNotParticipant:
         try:
           sent_message = message.reply_text(
-              "{}, you are **not subscribed** to my [channel](https://t.me/{}) yet. Please [join](https://t.me/{}) and **press the button below** to unmute yourself.".format(message.from_user.mention, channel, channel),
+              "{},ඔයා තාම අපේ Movie Reviews Channel එකට Join වෙලා නැහැනේ.😕 ඉතින් ඒකට Join වෙලා. පහල Unmute Button එක Click කරන්න.🤗 එතකොට ඔයාට Group එකෙන් Fims & Tv Series ලබාගන්න පුලුවන්.😊, Y𝗼𝘂 𝗮𝗿𝗲 𝗻𝗼𝘁 𝘀𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲𝗱 𝘁𝗼 𝗺𝘆 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 𝘆𝗲𝘁.(message.from_user.mention, channel, channel),
               disable_web_page_preview=True,
               reply_markup=InlineKeyboardMarkup(
-                  [[InlineKeyboardButton("📢 Join Update Channel 📢", url=f"https://t.me/{channel}")],
-                   [InlineKeyboardButton("UnMute Me", callback_data="onUnMuteRequest")]]
+                  [[InlineKeyboardButton("𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🙂 ", url=f"https://t.me/{channel}")],
+                   [InlineKeyboardButton("𝗨𝗻𝗺𝘂𝘁𝗲 𝗠𝗲 ✅", callback_data="onUnMuteRequest")]]
               )
           )
           client.restrict_chat_member(chat_id, user_id, ChatPermissions(can_send_messages=False))
