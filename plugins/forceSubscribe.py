@@ -50,7 +50,7 @@ def _check_member(client, message):
       except UserNotParticipant:
         try:
           sent_message = message.reply_text(
-              "{},ඔයා තාම අපේ Movie Reviews Channel එකට Join වෙලා නැහැනේ.😕 ඉතින් ඒකට Join වෙලා. පහල Unmute Button එක Click කරන්න.🤗 එතකොට ඔයාට Group එකෙන් Fims & Tv Series ලබාගන්න පුලුවන්.😊, Y𝗼𝘂 𝗮𝗿𝗲 𝗻𝗼𝘁 𝘀𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲𝗱 𝘁𝗼 𝗺𝘆 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 𝘆𝗲𝘁.(message.from_user.mention, channel, channel),
+              "{},ඔයා තාම අපේ Movie Reviews Channel එකට Join වෙලා නැහැනේ.😕 ඉතින් ඒකට Join වෙලා. පහල Unmute Button එක Click කරන්න.🤗 එතකොට ඔයාට Group එකෙන් Fims & Tv Series ලබාගන්න පුලුවන්.😊(message.from_user.mention),
               disable_web_page_preview=True,
               reply_markup=InlineKeyboardMarkup(
                   [[InlineKeyboardButton("𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🙂 ", url=f"https://t.me/{channel}")],
